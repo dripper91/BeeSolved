@@ -26,7 +26,7 @@ public class Trie {
         Scanner x = null;
 
         try {
-            x = new Scanner(new File("C:\\Users\\isaac\\OneDrive\\CodeProjects\\NYT Spelling Bee Solver\\NYT Spelling Bee Solver\\src\\english3.txt"));
+            x = new Scanner(new File("C:\\Users\\isaac\\OneDrive\\CodeProjects\\NYT Spelling Bee Solver\\NYT Spelling Bee Solver\\src\\eng_4.txt"));
         }
         catch(Exception e) {
             System.out.println("file not found");
@@ -75,7 +75,7 @@ public class Trie {
         for(int i = 0; i < 7; i++) {
             if(curr.next[chars.get(i) - 'a'] != null) {
                 boolean pivot = false;
-                if(i == 2)
+                if(i == 5)
                     pivot = true;
                 String newString = temp + chars.get(i);
                 helper(curr.next[chars.get(i) - 'a'], newString, (pivot || hasPivot));
