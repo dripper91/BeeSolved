@@ -11,12 +11,12 @@ public class Main {
 
         Trie myTrie = new Trie();
 
-        letters.add('a');
         letters.add('d');
+        letters.add('r');
         letters.add('g');
         letters.add('n');
         letters.add('o');
-        letters.add('r');
+        letters.add('a');
         letters.add('u');
 
         List<String> results = myTrie.solveSpellingBee(letters);
